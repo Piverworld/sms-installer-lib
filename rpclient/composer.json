@@ -22,7 +22,7 @@
     "require": {
         "php": "^7.1.3|^8.0",
         "ext-json": "*",
-        "spondonit/zttp": "^1.0"
+        "spondonit/zttp": "dev-main"
     },
     "require-dev": {
         "vlucas/phpdotenv": "^4.1",
@@ -34,5 +34,11 @@
         "psr-4": {
             "SpondonIt\\Rpclient\\":"src/"
         }
-    }
+    },
+    "repositories" : [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Piverworld/sms-installer-lib/tree/main/zttp"
+        },
+    ]
 }
